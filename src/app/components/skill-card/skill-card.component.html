@@ -1,0 +1,5 @@
+<div id="skill-card">
+    <i class="skill-icon fa-brands" [class]="iconClass" *ngIf="fontAwesome"></i>
+    <img [src]="iconClass" *ngIf="!fontAwesome">
+    <p class="skill-name">{{skillName}}</p>
+</div>

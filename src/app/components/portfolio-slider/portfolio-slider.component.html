@@ -1,0 +1,29 @@
+<section id="portfolio-slider" #elementoRef>
+    <div class="slider-container">
+        <div (click)="prevSlide()"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="images-slider" >
+            <div class="slides" [style.transform]="'translateX('+translate+'%)'">
+                <div class="slide" *ngFor="let image of images">
+                    <div class="img" 
+                    [style]="{'width': widthSlides, 'height': heightSlides}" 
+                    (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave()" (scroll)="onMouseScroll()">
+                        <img [src]="image" [style.width]="widthSlides">
+                        <div class="overlay" [style.opacity]="overlayOpacity">
+                            <div class="animated-mouse">
+                              <img alt="mouseScrolling">
+                            </div>
+                            <span class="scroll-text">{{'portfolio.scrollText' | translate }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div (click)="nextSlide()"><i class="fa-solid fa-chevron-right"></i></div>
+    </div>
+
+    <div class="dots">
+        <div class="slider-dots">
+            <span class="dot" *ngFor="let image of images; let i = index" (click)="onDotClick(i)" [class.active]="currentSlideIndex === i"></span>
+        </div>
+    </div>
+</section>

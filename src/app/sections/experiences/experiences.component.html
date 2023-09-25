@@ -1,0 +1,12 @@
+<section id="experiences">
+    <h1 class="title-text title-section">{{'experiences.title' | translate}}<span class="yellow-point">.</span></h1>
+    <div class="cards-container">
+        <div class="horizontal-line-rig line-1"></div>
+        <app-experience-card class="exp-card" id="card-1"  [experienceList]="impulseExperiences" title="{{ 'experiences.card1.title' | translate}}"></app-experience-card>
+        <div class="horizontal-line-lef line-2"></div>
+        <app-experience-card class="exp-card" id="card-2" [experienceList]="sttpExperiences" title="{{ 'experiences.card2.title' | translate}}"></app-experience-card>
+        <div class="horizontal-line-rig line-3"></div>
+        <app-experience-card class="exp-card" id="card-3" [experienceList]="wordpressExperiences" title="{{ 'experiences.card3.title' | translate}}"></app-experience-card>
+        <div class="line"></div>
+    </div>
+</section>

@@ -1,0 +1,21 @@
+<div class="background">
+    <section id="contact" (mouseenter)="classIcon = 'animated-icon'" (mouseleave)="classIcon = 'none'">
+        <div class="squares-container">
+            <div class="square-line square-1"></div>
+            <div class="square-line square-2"></div>
+            <div class="square-line square-3"></div>
+        </div>
+        <div class="card">
+            <h1 class="title-text title-section">{{'contact.title' | translate}}<span class="yellow-point">.</span></h1>
+            <div class="contact-items">
+                <a class="contact-item" href="https://github.com/Igaraybc" target="_blank"><i class="fa-brands fa-github contact-icon"></i>Igaraybc</a>
+                <a class="contact-item" href="mailto:igaraybc@gmail.com" target="_blank"><i class="fa-regular fa-envelope contact-icon"></i>igaraybc@gmail.com</a>
+                <a class="contact-item" href="https://linkedin.com/in/igara-yasmin" target="_blank"><i class="fa-brands fa-linkedin contact-icon"></i>linkedin/in/igara-yasmin</a>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <i class="fa-solid fa-circle-chevron-up icon-up" [class]='classIcon' onClick="window.scrollTo({ top: 0, behavior: 'smooth' })"></i>
+        <p>{{'footer.copyright' | translate}}</p>
+    </section>
+</div>

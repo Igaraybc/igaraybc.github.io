@@ -1,0 +1,61 @@
+ {
+    "header": {
+        "aboutMe": "About me",
+        "skills": "Skills",
+        "experiences": "Experiences",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "home":{
+        "welcome": "Hello",
+        "name": "I'm Ígara Yasmin",
+        "profession1": "Software",
+        "profession2": "developer"
+    },
+    "aboutMe": {
+        "title": "About Me",
+        "text": "Hi! I'm Ígara Yasmin, I'm a Computer Engineering student. Over the past few years I've dedicated my studies and my career to the field of software development, deepening my expertise in various programming languages, frameworks and agiles methodologies. I've worked on diverse projects, collaborating with multidisciplinary teams, particularly in the frontend where I used Angular, React.js and WordPress. Besides, my college education has provided me with a strong foundation in programming fundamentals in several languages like Python, Java, and C in diverse contexts. I'm excited to take on new challenges, explore exciting opportunities, and continue to grow as a professional. If you are interested in collaborating or learning more about me, please feel free to get in touch!",
+        "buttonCV": "Download CV",
+        "buttonContact": "Contact"
+    },
+    "skills":{
+        "title": "Skills",
+        "subtitle": "Programming tools I've used:"
+    },
+    "experiences":{
+        "title": "Experiences",
+        "card1":{
+            "title": "Impulse Business Solutions",
+            "item1": "Web systems development in the Front-end part with HTML, CSS, React.js, JavaScript, Wordpress;",
+            "item2": "Web systems development in the Back-end part with Node.js and databases mongoDB e MySQL;",
+            "item3": "Development of conversational flows using zenvia flow;",
+            "item4": "Development of the requirements document of a project related to municipal education;",
+            "item5": "Use of the Scrum methodology."
+        },
+        "card2":{
+            "title": "STTP - Superintendency of Traffic and Public Transportation in Campina Grande",
+            "item1": "Web systems development in the Front-end part with HTML, CSS, Angular, TypeScript, Bootstrap;",
+            "item2": "Web systems development in the Back-end part with Node.js and database mongoDB;",
+            "item3": "Some adjustments in PHP codes;",
+            "item4": "And Git for project versioning."
+        },
+        "card3":{
+            "title": "Websites development with wordpress:",
+            "item1": "ocosmodesign.com",
+            "item2": "auriceliamassoterapia.com",
+            "item3": "audisomca.com.br/lp"
+        }
+    },
+    "portfolio":{
+        "title": "Portfolio",
+        "subtitle": "Websites developed with wordpress:",
+        "scrollText": "SCROLL  DOWN"
+    },
+    "contact":{
+        "title": "Contacts"
+    },
+    "footer":{
+        "copyright": "© 2023 Ígara Yasmin - All Rights Reserved."
+    }
+
+}

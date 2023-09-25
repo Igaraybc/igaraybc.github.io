@@ -1,0 +1,20 @@
+<section id="skills-slider" #elementoRef (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    <div class="slider-container">
+        <div (click)="prevSlide()"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="cards-slider" (transitionend)="onTransitionEnd($event)"  [style.width]="widthSlides">
+            <div class="slides" [style.transform]="translate" [style.transition] = 'transition'>
+                <div class="slide" *ngFor="let skill of skills">
+                    <div class="card">
+                        <app-skill-card [iconClass]="skill.icon" [skillName]="skill.name" [fontAwesome]="skill.fontAwesome == false ? false : true"></app-skill-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div (click)="nextSlide()"><i class="fa-solid fa-chevron-right"></i></div>
+    </div>
+    <div class="dots">
+        <div class="slider-dots">
+            <span class="dot" *ngFor="let skill of skills; let i = index" (click)="onDotClick(i)" [class.active]="currentSlideIndex === i"></span>
+        </div>
+    </div>
+</section>

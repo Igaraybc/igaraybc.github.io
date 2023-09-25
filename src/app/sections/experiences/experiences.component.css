@@ -1,0 +1,153 @@
+#experiences{
+    background-color: black;
+    padding: 50px 0px 9%;
+
+    position: relative;
+}
+
+.title-text{
+    color: white;
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0px 5%;
+
+}
+
+.exp-card{
+    display: flex;
+}
+
+#card-1, #card-3{
+    justify-content: end;
+}
+
+#card-2{
+    margin-top: -200px;
+}
+
+#card-3{
+    margin-top: -50px;
+}
+
+#card-1::before, #card-3::before, #card-2::after{
+    content: '';
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #FFCD1D;
+    position: relative;
+    z-index: 2;
+}
+
+#card-1::before, #card-3::before{
+    left: 15px;
+    top: 20px;
+}
+
+#card-2::after{
+    right: 15px;
+    top: 20px;
+}
+
+.line{
+    position: absolute;
+    top: 237px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 2.5px; 
+    height: 80%; 
+    background-color: #FFCD1D;
+    z-index: 0;
+}
+
+.horizontal-line-rig, .horizontal-line-lef{
+    position: relative;
+    width: 30%; 
+    height: 2.5px; 
+    background-color: #FFCD1D;
+    z-index: 0;
+}
+
+.horizontal-line-rig{
+    left: 50%; 
+}
+
+.horizontal-line-lef{
+    left: 20%;
+}
+
+.line-1{
+    top: 37.5px;
+}
+
+.line-2{
+    top: -162.5px;
+} 
+
+.line-3{
+    top: -12.5px;
+}
+
+@media(max-width: 830px){
+    #card-1{
+        justify-content: center;
+    }
+
+    #card-2{
+        margin-top: 0px;
+        justify-content: center;
+    }
+    
+    #card-3{
+        margin-top: 0px;
+        justify-content: center;
+    }
+
+    #card-2::after{
+        display: none;
+    }
+
+    #card-2::before {
+        content: '';
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #FFCD1D;
+        position: relative;
+        left: 15px;
+        top: 20px;
+        z-index: 2;
+    }
+    
+    .line{
+        left: 50px;
+        top: 237px; 
+    }
+
+    .line-1, .line-2, .line-3{
+        top: 37.5px;
+        left: 11px;
+    }
+        
+}
+
+@media(max-width: 768px){
+    .line{
+        top: 223px; 
+    }
+}
+
+@media(max-width: 749px){
+    .line{
+        left: 6.7%;
+    }
+
+}

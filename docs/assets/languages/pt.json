@@ -1,0 +1,62 @@
+{
+    "header": {
+        "aboutMe": "Sobre mim",
+        "skills": "Habilidades",
+        "experiences": "Experiências",
+        "portfolio": "Portfólio",
+        "contact": "Contato"
+    },
+    "home":{
+        "welcome": "Olá",
+        "name": "Sou Ígara Yasmin",
+        "profession1": "Desenvolvedora",
+        "profession2": "de software"
+    },
+    "aboutMe": {
+        "title": "Sobre mim",
+        "text": "Olá! Sou Ígara Yasmin, estudante de Engenharia de Computação e ao longo dos últimos anos tenho dedicado meus estudos e a minha carreira na área de desenvolvimento de software, fortalecendo meus conhecimentos em diversas linguagens de programação, frameworks e metodologias ágeis. Trabalhei em projetos diversificados, colaborando com times multidisciplinares, especialmente no frontend utilizando Angular, React.js e WordPress. Além disso, a faculdade me proporcionou um sólido conhecimento em fundamentos de programação em diversas linguanges como Python, Java e C em variados contextos. Estou animada para enfrentar novos desafios, explorar oportunidades emocionantes e continuar crescendo como profissional. Se você está interessado em colaborar ou saber mais sobre mim, sinta-se à vontade para entrar em contato!",
+        "buttonCV": "Baixar currículo",
+        "buttonContact": "Contato"
+    },
+    "skills":{
+        "title": "Habilidades",
+        "subtitle": "Ferramentas de programação que já tive contato"
+    },
+    "experiences":{
+        "title": "Experiências",
+        "card1":{
+            "title": "Impulse Business Solutions",
+            "item1": "Desenvolvimento de sistemas web na parte de Front-end utilizando HTML, CSS, React.js, JavaScript, Wordpress;",
+            "item2":"Desenvolvimento na parte de Back-end utilizando Node.js com banco de dados mongoDB e MySQL;",
+            "item3":"Desenvolvimento de fluxos conversacionais através do zenvia flow;",
+            "item4":"Desenvolvimento do documento de requisitos de um projeto relacionado a educação municipal;",
+            "item5":"Utilização da metodologia ágil Scrum."
+        },
+        "card2":{
+            "title": "STTP - Superintendência de Trânsito e Transportes Públicos",
+            "item1": "Desenvolvimento web Front-end com HTML, CSS, Angular, TypeScript, Bootstrap;",
+            "item2":"Desenvolvimento web Back-end utilizando Node.js com banco de dados mongoDB;",
+            "item3":"Edição de códigos PHP;",
+            "item4":"Git para o versionamento do projeto."
+        },
+        "card3":{
+            "title": "Desenvolvimento de sites para empresas em wordpress:",
+            "item1": "ocosmodesign.com",
+            "item2":"auriceliamassoterapia.com",
+            "item3":"audisomca.com.br/lp"
+        }
+    },
+    "portfolio":{
+        "title": "Portfólio",
+        "subtitle": "Sites desenvolvidos com wordpress:",
+        "scrollText": "ROLE PARA BAIXO"
+    },
+    "contact":{
+        "title": "Contatos"
+    },
+    "footer":{
+        "copyright": "© 2023 Ígara Yasmin - Todos os direitos reservados."
+    }
+
+}
+  

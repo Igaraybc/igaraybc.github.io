@@ -1,0 +1,39 @@
+.card-container{
+    background-color: white;
+    border-radius: 20px;
+
+    padding: 30px;
+    margin-bottom: 20px;
+
+    width: 35%;
+    min-width: 280px;
+    position: relative;
+    z-index: 1;
+}
+
+.experience-title{
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 830px){
+    .card-container{
+        width: 60%;
+    }
+
+    .experience-title{
+        font-size: 18px;
+    }
+
+    li{
+        font-size: 14px;
+    }
+}

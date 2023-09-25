@@ -1,0 +1,52 @@
+section#portfolio{
+    padding: 50px 20px 100px;
+    background-color: #F5F5F5;
+}
+
+.title-section{
+    text-align: center;
+    margin: 10px;
+}
+
+.subtitle{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.slider-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 25px;
+}
+
+.slides{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    justify-content: start;
+  
+    padding: 20px 40px;
+
+    height: 400px;
+    width: 600px;
+    
+    overflow: hidden;
+}
+
+.slide{
+    margin: 0px 20px;
+}
+
+.slide img{
+    border-radius: 15px;
+}
+
+@media(max-width: 768px){
+    p.subtitle{
+        font-size: 14px;
+    }
+}

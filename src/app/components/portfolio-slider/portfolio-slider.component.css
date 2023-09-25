@@ -1,0 +1,123 @@
+.slider-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-slider{
+    padding: 40px 0px;
+
+    max-width: 75%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.slides {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    justify-content: start;
+    justify-items: center;
+
+    width: 300%;
+    transition: all .7s;
+}
+
+.img{
+    position: relative;
+
+    overflow: hidden;
+    overflow-y: auto;
+    border-radius: 15px;
+    transform: scale(1.05);
+}
+
+.img:hover{
+    transform: scale(1.1);
+}
+
+.fa-chevron-left, .fa-chevron-right{
+    font-size: 26px;
+    padding: 0px 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+  
+.dot.active {
+    width: 10px;
+    height: 10px;
+    background-color: #525151;
+}
+
+.dots{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease;
+
+    /*display scroll-text and animated-mouse*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.scroll-text{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+
+    margin: 5%;
+}
+
+.animated-mouse {
+    width: 35%;
+    height: 35%;
+    margin: 5%;
+    animation: svgChange .9s infinite; 
+}
+
+@media(max-width: 768px){
+    .fa-chevron-left, .fa-chevron-right{
+        font-size: 22px;
+    }
+}
+
+@keyframes svgChange {
+0%, 25% {
+    content: url('./svg/mouseScroll1.svg');
+}
+26%, 50% {
+    content: url('./svg/mouseScroll2.svg');
+}
+51%, 75% {
+    content: url('./svg/mouseScroll3.svg');
+}
+76%, 100% {
+    content: url('./svg/mouseScroll4.svg');
+}
+}
