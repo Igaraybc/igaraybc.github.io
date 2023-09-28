@@ -5,7 +5,7 @@ section#home{
     justify-content: center;
 
     background-color: #F5F5F5;
-    padding: 50px 80px 0px;
+    padding: 50px 60px 0px;
 }
 
 .initial-text{
@@ -69,17 +69,48 @@ h3 p.subtitle-bigger{
 
 @media(max-width: 860px){
     h1.title-text{
-        font-size: 6vw;
+        font-size: 7vw;
+        margin-left: -3px;
     }
     
     h3 p.subtitle-small{
-        font-size: 3vw;
+        font-size: 3.5vw;
         margin: 0px;
     }
     
     h3 p.subtitle-bigger{
-        font-size: 4vw;
+        font-size: 4.5vw;
         margin: 0px;
     }
     
+}
+
+@media(max-width: 520px){
+    section#home{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .initial-text{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    h1.title-text{
+        font-size: 50px;
+        margin-left: 0px;
+    }
+    
+    h3 p.subtitle-small{
+        font-size: 20px;
+    }
+    
+    h3 p.subtitle-bigger{
+        font-size: 28px;
+    }
+
+    #picture{
+        width: 45%;
+        bottom: -10px;
+    }
 }

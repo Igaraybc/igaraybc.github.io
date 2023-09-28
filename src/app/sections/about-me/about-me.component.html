@@ -4,7 +4,7 @@
         <p>{{'aboutMe.text' | translate}}
         </p>
         <div class="btns">
-            <button class="btn">{{'aboutMe.buttonCV' | translate}}</button>
+            <button class="btn" (click)="downloadCV()">{{'aboutMe.buttonCV' | translate}}</button>
             <a href="#contact"><button class="btn-princ">{{'aboutMe.buttonContact' | translate}}</button></a>
         </div>
     </div>

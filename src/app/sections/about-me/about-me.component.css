@@ -47,7 +47,7 @@ section#about-me{
     background-color: #FFCD1D;
     font-weight: 600;
 
-    margin-left: 40px;
+    margin-left: 6%;
 }
 
 .btn:hover, .btn-princ:hover{
@@ -109,7 +109,7 @@ section#about-me{
 @media(max-width: 768px){
     section#about-me{
         margin-top: -7%;
-        padding: 10% 20px 10% 60px;
+        padding: 10% 20px 10% 50px;
 
         grid-template-columns: 100%;
     }
@@ -122,8 +122,22 @@ section#about-me{
         margin: 3%;
     }
 
+}
 
+@media(max-width: 425px){
+    section#about-me{
+        padding: 10% 20px;
+    }
+}
 
+@media(max-width: 408px){
+    .btn-princ{
+        margin: 20px;
+        margin-bottom: 0px;
+    }
 
+    .btns{
+        text-align: center;
+    }
 }
 

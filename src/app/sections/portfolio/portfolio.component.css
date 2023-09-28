@@ -48,5 +48,6 @@ section#portfolio{
 @media(max-width: 768px){
     p.subtitle{
         font-size: 14px;
+        margin-bottom: 0px;
     }
 }

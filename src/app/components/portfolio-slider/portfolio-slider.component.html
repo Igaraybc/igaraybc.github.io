@@ -6,7 +6,7 @@
                 <div class="slide" *ngFor="let image of images">
                     <div class="img" 
                     [style]="{'width': widthSlides, 'height': heightSlides}" 
-                    (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave()" (scroll)="onMouseScroll()">
+                    (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave()" (scroll)="onMouseScroll()" (click)="zoomSlide()">
                         <img [src]="image" [style.width]="widthSlides">
                         <div class="overlay" [style.opacity]="overlayOpacity">
                             <div class="animated-mouse">

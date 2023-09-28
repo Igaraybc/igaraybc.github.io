@@ -41,18 +41,27 @@ export class PortfolioSliderComponent {
   updateElementWidth(){
     const elemento: HTMLElement = this.elementRef.nativeElement;
     const width = elemento.offsetWidth-100;
-    const newWidth = Math.floor(width * 0.7);
-    if(newWidth > 640){
-      this.widthSlides = '640px'; //max-width: 640px;
-    }
-    else{
+    const newWidth = Math.floor(width * 0.8);
+    if(window.innerWidth <= 500){
+      const width = elemento.offsetWidth;
+      const newWidth = Math.floor(width * 0.8);
       this.widthSlides = `${newWidth}px`;
-    }
-    if(0.67*newWidth > 400){
-      this.heightSlides = '400px'; //max-height: 420px;
+      this.heightSlides = `${0.69*newWidth}px`; 
     }
     else{
-      this.heightSlides = `${0.67*newWidth}px`;
+      if(newWidth > 640){
+        this.widthSlides = '640px'; //max-width: 640px;
+      }
+      else{
+        this.widthSlides = `${newWidth}px`;
+      }
+      if(0.67*newWidth > 400){
+        this.heightSlides = '400px'; //max-height: 420px;
+      }
+      else{
+        this.heightSlides = `${0.67*newWidth}px`;
+      }
+    
     }
   }
 
@@ -97,13 +106,19 @@ export class PortfolioSliderComponent {
   }
 
   checkScreenSize() {
-    this.isMobile = window.innerWidth <= 768; // Exemplo: considera como mobile se a largura for menor que 768 pixels
+    this.isMobile = window.innerWidth <= 768; 
     if(this.isMobile){
       this.overlayOpacity = 0;
       const scrollTopValue = document.getElementsByClassName('img')[0].scrollTop;
       if(scrollTopValue < 100) {
         this.overlayOpacity = 1;
       }
+    }
+  }
+
+  zoomSlide(){
+    if(window.innerWidth <= 500){
+      console.log("zoom...")
     }
   }
 

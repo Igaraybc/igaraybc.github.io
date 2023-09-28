@@ -8,7 +8,7 @@
 .images-slider{
     padding: 40px 0px;
 
-    max-width: 75%;
+    width: 75%;
     overflow: hidden;
     position: relative;
     
@@ -101,11 +101,27 @@
     animation: svgChange .9s infinite; 
 }
 
+@media(max-width: 1024px){
+    .images-slider{
+        width: 80%;
+    }
+}
+
 @media(max-width: 768px){
     .fa-chevron-left, .fa-chevron-right{
         font-size: 22px;
     }
 }
+
+@media(max-width: 500px){
+    .fa-chevron-left, .fa-chevron-right{
+        padding: 0px;
+    }
+    .images-slider{
+        width: 100%;
+    }
+}
+
 
 @keyframes svgChange {
 0%, 25% {

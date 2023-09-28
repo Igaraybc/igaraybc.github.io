@@ -144,4 +144,21 @@
     .squares-container{
         top: -140px;
     }
+    #footer p{
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width: 500px){
+    .card{
+        width: 280px; 
+        height: 270px;    
+    }
+    .square-line{
+        width: 315px;
+        height: 305px;  
+    }
+
+    
 }

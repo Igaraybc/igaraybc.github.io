@@ -44,6 +44,7 @@
     border-radius: 50%;
     background-color: #FFCD1D;
     position: relative;
+    min-width: 35px;
     z-index: 2;
 }
 
@@ -124,6 +125,7 @@
         position: relative;
         left: 15px;
         top: 20px;
+        min-width: 35px;
         z-index: 2;
     }
     
@@ -143,11 +145,32 @@
     .line{
         top: 223px; 
     }
+
+    .exp-card{
+        margin: 25px 0px;
+    }
+
+    #card-1{
+        margin-top: 0px;
+    }
 }
 
 @media(max-width: 749px){
     .line{
         left: 6.7%;
     }
+}
 
+@media(max-width: 425px){
+    .line{
+        display: none;
+    }
+
+    .line-1, .line-2, .line-3{
+        left: -6%;
+    }
+    
+    .cards-container{
+        padding-left: 0px;
+    }
 }

@@ -7,7 +7,9 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private translate: TranslateService){ }
+  constructor(private translate: TranslateService){ 
+    this.translate.use('pt');
+  }
 
   currentLang: String = 'pt';
   isMenuOpen: boolean = false;
