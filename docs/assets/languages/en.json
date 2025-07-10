@@ -9,12 +9,12 @@
     "home":{
         "welcome": "Hello",
         "name": "I'm Ígara Yasmin",
-        "profession1": "Software",
-        "profession2": "developer"
+        "profession1": "Fullstack",
+        "profession2": "Developer"
     },
     "aboutMe": {
         "title": "About Me",
-        "text": "Hi! I'm Ígara Yasmin, I'm a Computer Engineering student. Over the past few years I've dedicated my studies and my career to the field of software development, deepening my expertise in various programming languages, frameworks and agiles methodologies. I've worked on diverse projects, collaborating with multidisciplinary teams, particularly in the frontend where I used Angular, React.js and WordPress. Besides, my college education has provided me with a strong foundation in programming fundamentals in several languages like Python, Java, and C in diverse contexts. I'm excited to take on new challenges, explore exciting opportunities, and continue to grow as a professional. If you are interested in collaborating or learning more about me, please feel free to get in touch!",
+        "text": "Hi! I’m Ígara Yasmin, a Computer Engineering graduate who has dedicated the past few years to studying and building a career in software development. I’ve been strengthening my skills in various programming languages, frameworks, and agile methodologies. I’ve worked on diverse projects, collaborating with multidisciplinary teams, especially on the frontend using Angular, React.js, and WordPress. More recently, I’ve been working as a fullstack developer with C#, using technologies such as ASP.NET and Blazor, contributing to both backend and frontend of web applications. I’m excited to take on new challenges, explore meaningful opportunities, and continue growing as a professional. If you’re interested in collaborating or learning more about me, feel free to get in touch!",
         "buttonCV": "Download CV",
         "buttonContact": "Contact"
     },
@@ -25,37 +25,50 @@
     "experiences":{
         "title": "Experiences",
         "card1":{
-            "title": "Impulse Business Solutions",
-            "item1": "Web systems development in the Front-end part with HTML, CSS, React.js, JavaScript, Wordpress;",
-            "item2": "Web systems development in the Back-end part with Node.js and databases mongoDB e MySQL;",
+            "title": "Fullstack Developer",
+            "company": "Campgemini Brazil",
+            "item1": "Fullstack developer working with C#, ASP.NET, and Blazor on internal projects and for major clients.",
+            "item2":"Highlighted experience in challenging projects for the client Ágora Investimentos (Bradesco Banking).",
+            "item3":"Frontend contributions, turning prototypes into intuitive and functional user interfaces.",
+            "item4": "Active involvement in backend development, implementing and integrating new features into the codebase.",
+            "item5": "Experience with Azure DevOps for task management, code versioning, and CI/CD pipeline automation."
+        },
+        "card2":{
+            "title": "Software Developer",
+            "company": "Impulse Business Solutions",
+            "item1": "Front-end web development of CRUD systems and websites using HTML, CSS, React.js, JavaScript, Wordpress;",
+            "item2": "Back-end development of CRUD systems using Node.js with mongoDB and MySQL databases;",
             "item3": "Development of conversational flows using zenvia flow;",
             "item4": "Development of the requirements document of a project related to municipal education;",
             "item5": "Use of the Scrum methodology."
         },
-        "card2":{
-            "title": "STTP - Superintendency of Traffic and Public Transportation in Campina Grande",
-            "item1": "Web systems development in the Front-end part with HTML, CSS, Angular, TypeScript, Bootstrap;",
-            "item2": "Web systems development in the Back-end part with Node.js and database mongoDB;",
-            "item3": "Some adjustments in PHP codes;",
-            "item4": "And Git for project versioning."
-        },
         "card3":{
-            "title": "Websites development with wordpress:",
+            "title": "Front-end Developer",
+            "company": "STTP - Superintendency of Traffic and Public Transportation",
+            "item1": "Front-end web development of CRUD systems and websites using HTML, CSS, Angular, TypeScript, Bootstrap;",
+            "item2": "Back-end web development of CRUD systems using Node.js with mongoDB;",
+            "item3": "Some adjustments in PHP codes;",
+            "item4": "Git for project versioning."
+        },
+        "card4":{
+            "title": "Website Developer",
+            "company": "Websites development:",
             "item1": "ocosmodesign.com",
             "item2": "auriceliamassoterapia.com",
-            "item3": "audisomca.com.br/lp"
+            "item3": "audisomca.com.br/lp",
+            "item4": "raymondosero.com"
         }
     },
     "portfolio":{
         "title": "Portfolio",
-        "subtitle": "Websites developed with wordpress:",
+        "subtitle": "Websites and applications I’ve developed throughout my journey as a developer.",
         "scrollText": "SCROLL  DOWN"
     },
     "contact":{
         "title": "Contacts"
     },
     "footer":{
-        "copyright": "© 2023 Ígara Yasmin - All Rights Reserved."
+        "copyright": "© 2025 Ígara Yasmin - All Rights Reserved."
     }
 
 }

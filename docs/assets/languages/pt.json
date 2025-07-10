@@ -10,52 +10,65 @@
         "welcome": "Olá",
         "name": "Sou Ígara Yasmin",
         "profession1": "Desenvolvedora",
-        "profession2": "de software"
+        "profession2": "Fullstack"
     },
     "aboutMe": {
         "title": "Sobre mim",
-        "text": "Olá! Sou Ígara Yasmin, estudante de Engenharia de Computação e ao longo dos últimos anos tenho dedicado meus estudos e a minha carreira na área de desenvolvimento de software, fortalecendo meus conhecimentos em diversas linguagens de programação, frameworks e metodologias ágeis. Trabalhei em projetos diversificados, colaborando com times multidisciplinares, especialmente no frontend utilizando Angular, React.js e WordPress. Além disso, a faculdade me proporcionou um sólido conhecimento em fundamentos de programação em diversas linguanges como Python, Java e C em variados contextos. Estou animada para enfrentar novos desafios, explorar oportunidades emocionantes e continuar crescendo como profissional. Se você está interessado em colaborar ou saber mais sobre mim, sinta-se à vontade para entrar em contato!",
+        "text": "Olá! Sou Ígara Yasmin, Engenheira de Computação e ao longo dos últimos anos tenho dedicado meus estudos e a minha carreira na área de desenvolvimento de software, fortalecendo meus conhecimentos em diversas linguagens de programação, frameworks e metodologias ágeis. Trabalhei em projetos diversificados, colaborando com times multidisciplinares, especialmente no frontend utilizando Angular, React.js e WordPress. Nos últimos tempos, venho atuando como desenvolvedora fullstack com C#, utilizando tecnologias como ASP.NET e Blazor, contribuindo tanto no backend quanto no frontend de aplicações web. Estou animada para enfrentar novos desafios, explorar oportunidades emocionantes e continuar crescendo como profissional. Se você está interessado em colaborar ou saber mais sobre mim, sinta-se à vontade para entrar em contato!",
         "buttonCV": "Baixar currículo",
         "buttonContact": "Contato"
     },
     "skills":{
         "title": "Habilidades",
-        "subtitle": "Ferramentas de programação que já tive contato"
+        "subtitle": "Ferramentas de programação que tenho experiência"
     },
     "experiences":{
         "title": "Experiências",
         "card1":{
-            "title": "Impulse Business Solutions",
-            "item1": "Desenvolvimento de sistemas web na parte de Front-end utilizando HTML, CSS, React.js, JavaScript, Wordpress;",
+            "title": "Desenvolvedora Fullstack",
+            "company": "Campgemini Brasil",
+            "item1": "Atuação como desenvolvedora fullstack com C#, ASP.NET e Blazor em projetos internos e para grandes clientes.",
+            "item2":"Destaque para projetos desafiadores desenvolvidos para o cliente Ágora Investimentos (Bradesco).",
+            "item3":"Contribuição no frontend, transformando protótipos em interfaces intuitivas e funcionais.",
+            "item4": "Participação ativa no backend, implementando e integrando novas funcionalidades ao código-fonte.",
+            "item5": "Utilização do Azure DevOps para gerenciamento de tarefas, versionamento de código e automação de pipelines."
+        },
+        "card2":{
+            "title": "Desenvolvedora de Software",
+            "company": "Impulse Business Solutions",
+            "item1": "Desenvolvimento web Front-end de websites e sistemas CRUD utilizando HTML, CSS, React.js, JavaScript, Wordpress;",
             "item2":"Desenvolvimento na parte de Back-end utilizando Node.js com banco de dados mongoDB e MySQL;",
             "item3":"Desenvolvimento de fluxos conversacionais através do zenvia flow;",
             "item4":"Desenvolvimento do documento de requisitos de um projeto relacionado a educação municipal;",
             "item5":"Utilização da metodologia ágil Scrum."
         },
-        "card2":{
-            "title": "STTP - Superintendência de Trânsito e Transportes Públicos",
-            "item1": "Desenvolvimento web Front-end com HTML, CSS, Angular, TypeScript, Bootstrap;",
+        "card3":{
+            "title": "Desenvolvedora Front-end",
+            "company": "STTP - Superintendência de Trânsito e Transportes Públicos",
+            "item1": "Desenvolvimento web Front-end de sistemas CRUD e websites com HTML, CSS, Angular, TypeScript, Bootstrap;",
             "item2":"Desenvolvimento web Back-end utilizando Node.js com banco de dados mongoDB;",
             "item3":"Edição de códigos PHP;",
             "item4":"Git para o versionamento do projeto."
         },
-        "card3":{
-            "title": "Desenvolvimento de sites para empresas em wordpress:",
+        "card4":{
+            "title": "Desenvolvedora de Websites",
+            "company": "Desenvolvimento de sites para empresas:",
             "item1": "ocosmodesign.com",
             "item2":"auriceliamassoterapia.com",
-            "item3":"audisomca.com.br/lp"
+            "item3":"audisomca.com.br/lp",
+            "item4": "raymondosero.com"
         }
     },
     "portfolio":{
         "title": "Portfólio",
-        "subtitle": "Sites desenvolvidos com wordpress:",
+        "subtitle": "Aplicações e websites que construí ao longo da minha trajetória",
         "scrollText": "ROLE PARA BAIXO"
     },
     "contact":{
         "title": "Contatos"
     },
     "footer":{
-        "copyright": "© 2023 Ígara Yasmin - Todos os direitos reservados."
+        "copyright": "© 2025 Ígara Yasmin - Todos os direitos reservados."
     }
 
 }
