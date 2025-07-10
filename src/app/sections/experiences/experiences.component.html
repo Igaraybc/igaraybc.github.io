@@ -3,15 +3,19 @@
     <div class="cards-container">
         <div class="exp-card-container">
             <div class="horizontal-line" [class.hor-width]="horizontalLines[0].active"></div>
-            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[0].active" [experienceList]="sttpExperiences" title="{{ 'experiences.card2.title' | translate}}" company="{{ 'experiences.card2.company' | translate}}"></app-experience-card>
+            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[0].active" [experienceList]="capgeminiExperiences" title="{{ 'experiences.card1.title' | translate}}" company="{{ 'experiences.card1.company' | translate}}"></app-experience-card>
         </div>
         <div class="exp-card-container">
             <div class="horizontal-line" [class.hor-width]="horizontalLines[1].active"></div>
-            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[1].active" [experienceList]="impulseExperiences" title="{{ 'experiences.card1.title' | translate}}" company="{{ 'experiences.card1.company' | translate}}"></app-experience-card>
+            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[1].active" [experienceList]="impulseExperiences" title="{{ 'experiences.card2.title' | translate}}" company="{{ 'experiences.card2.company' | translate}}"></app-experience-card>
         </div>
         <div class="exp-card-container">
             <div class="horizontal-line" [class.hor-width]="horizontalLines[2].active"></div>
-            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[2].active" [experienceList]="websiteExperiences" title="{{ 'experiences.card3.title' | translate}}" company="{{ 'experiences.card3.company' | translate}}"></app-experience-card>
+            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[2].active" [experienceList]="sttpExperiences" title="{{ 'experiences.card3.title' | translate}}" company="{{ 'experiences.card3.company' | translate}}"></app-experience-card>
+        </div>
+        <div class="exp-card-container">
+            <div class="horizontal-line" [class.hor-width]="horizontalLines[3].active"></div>
+            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[3].active" [experienceList]="websiteExperiences" title="{{ 'experiences.card4.title' | translate}}" company="{{ 'experiences.card4.company' | translate}}"></app-experience-card>
         </div>
         <div class="line" [style.height.px]="centerLineHeight" [style.background]="color"></div>
     </div>

@@ -21,7 +21,7 @@
     justify-content: start;
     justify-items: center;
 
-    width: 300%;
+    width: 500%;
     transition: all .7s;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .fa-chevron-left, .fa-chevron-right{

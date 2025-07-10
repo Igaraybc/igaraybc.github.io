@@ -4,11 +4,14 @@ section#about-me{
     align-items: center;
 
     background-color: black;
-    padding: 10% 0px 50px 60px;
-    margin-top: -80px;
+    padding: 40px 0px 50px 60px;
 
     min-height: 520px;
     overflow: hidden;
+}
+
+.title-section{
+    margin-bottom: 10px;
 }
 
 .text{
@@ -19,7 +22,7 @@ section#about-me{
 .text p {
     font-size: 16px;
     line-height: 0.7cm;
-    margin: 7% 15% 5% 0px;
+    margin: 3% 15% 5% 0px;
 }
 
 .btns{
@@ -47,7 +50,7 @@ section#about-me{
     background-color: #FFCD1D;
     font-weight: 600;
 
-    margin-left: 6%;
+    margin-left: 5%;
 }
 
 .btn:hover, .btn-princ:hover{
@@ -108,7 +111,6 @@ section#about-me{
 
 @media(max-width: 768px){
     section#about-me{
-        margin-top: -7%;
         padding: 10% 20px 10% 50px;
 
         grid-template-columns: 100%;

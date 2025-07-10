@@ -7,27 +7,10 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./experiences.component.css']
 })
 export class ExperiencesComponent {
-  impulseExperiences: string[] = [
-    'experiences.card1.item1',
-    'experiences.card1.item2',
-    'experiences.card1.item3',
-    'experiences.card1.item4',
-    'experiences.card1.item5'
-  ]
-
-  sttpExperiences: string[] =[
-    'experiences.card2.item1',
-    'experiences.card2.item2',
-    'experiences.card2.item3',
-    'experiences.card2.item4'
-  ]
-
-  websiteExperiences: string[] = [
-    'experiences.card3.item1',
-    'experiences.card3.item2',
-    'experiences.card3.item3',
-    'experiences.card3.item4'
-  ]
+  capgeminiExperiences: string[] = this.getExperienceList("card1", 5);
+  impulseExperiences: string[] = this.getExperienceList("card2", 5);
+  sttpExperiences: string[] = this.getExperienceList("card3", 4);
+  websiteExperiences: string[] = this.getExperienceList("card4", 4);
 
   centerLineHeight: number = 0;
   color:string = '#FFCD1D';
@@ -57,12 +40,6 @@ export class ExperiencesComponent {
       //While I'm not in the experience section
       this.centerLineHeight = 0;
     }
-    /*if(this.centerLineHeight >= sectionSize-149){
-      //The center line top is 149
-      const percYellow = ((sectionSize-149)*100)/this.centerLineHeight;
-      const percBlack = 100 - percYellow;
-      this.color = `linear-gradient(to bottom, #FFCD1D 0%, #FFCD1D ${percYellow}%, black ${percBlack}%, black 100%)`
-    }*/
   }
 
   horizontalLineAnimated(){
@@ -71,18 +48,28 @@ export class ExperiencesComponent {
     const horLine1Top = cardsContainer.children[0].children[0].offsetTop;
     const horLine2Top = cardsContainer.children[1].children[0].offsetTop;
     const horLine3Top = cardsContainer.children[2].children[0].offsetTop;
+    const horLine4Top = cardsContainer.children[3].children[0].offsetTop;
 
     this.horizontalLines = [
       {top: horLine1Top, active: false},
       {top: horLine2Top, active: false},
-      {top: horLine3Top, active: false}
+      {top: horLine3Top, active: false},
+      {top: horLine4Top, active: false}
     ]
     
     this.horizontalLines.forEach(line => {
-      line.active = this.centerLineHeight-6 >= line.top;
+      line.active = this.centerLineHeight-10 >= line.top;
     })
     
   }
 
   constructor(private translate: TranslateService){ }
+
+  getExperienceList(cardName:string, quantity:number){
+    let experiences = [];
+    for (let index = 1; index <= quantity; index++) {
+      experiences.push(`experiences.${cardName}.item${index}`)
+    }
+    return experiences;
+  }
 }

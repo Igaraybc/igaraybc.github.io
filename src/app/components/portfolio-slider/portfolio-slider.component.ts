@@ -10,6 +10,8 @@ export class PortfolioSliderComponent {
   @ViewChild('elementoRef', { static: true }) elementRef!: ElementRef;
 
   images: String[] = [
+    "assets/img/masterbuild-screenshot.png",
+    "assets/img/raymondosero-screenshot.png",
     "assets/img/ocosmodesign-screenshot.png",
     "assets/img/auriceliamassoterapia-screenshot.png",
     "assets/img/audisomca-screenshot.png"
@@ -83,14 +85,14 @@ export class PortfolioSliderComponent {
 
   prevSlide(qntElements: number = 1){
     if(this.translate < 0){
-      this.translate += 33.333*qntElements;
+      this.translate += 20*qntElements;
       this.currentSlideIndex--;
     }
   }
 
   nextSlide(qntElements: number = 1){
     if(this.translate > -66){
-      this.translate -= 33.333*qntElements;
+      this.translate -= 20*qntElements;
       this.currentSlideIndex++;
     }
   }
@@ -115,5 +117,4 @@ export class PortfolioSliderComponent {
       }
     }
   }
-
 }
