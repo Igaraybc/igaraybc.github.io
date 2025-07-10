@@ -1,12 +1,18 @@
-<section id="experiences">
+<section id="experiences" #experienceSection>
     <h1 class="title-text title-section">{{'experiences.title' | translate}}<span class="yellow-point">.</span></h1>
     <div class="cards-container">
-        <div class="horizontal-line-rig line-1"></div>
-        <app-experience-card class="exp-card" id="card-1"  [experienceList]="impulseExperiences" title="{{ 'experiences.card1.title' | translate}}"></app-experience-card>
-        <div class="horizontal-line-lef line-2"></div>
-        <app-experience-card class="exp-card" id="card-2" [experienceList]="sttpExperiences" title="{{ 'experiences.card2.title' | translate}}"></app-experience-card>
-        <div class="horizontal-line-rig line-3"></div>
-        <app-experience-card class="exp-card" id="card-3" [experienceList]="wordpressExperiences" title="{{ 'experiences.card3.title' | translate}}"></app-experience-card>
-        <div class="line"></div>
+        <div class="exp-card-container">
+            <div class="horizontal-line" [class.hor-width]="horizontalLines[0].active"></div>
+            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[0].active" [experienceList]="sttpExperiences" title="{{ 'experiences.card2.title' | translate}}" company="{{ 'experiences.card2.company' | translate}}"></app-experience-card>
+        </div>
+        <div class="exp-card-container">
+            <div class="horizontal-line" [class.hor-width]="horizontalLines[1].active"></div>
+            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[1].active" [experienceList]="impulseExperiences" title="{{ 'experiences.card1.title' | translate}}" company="{{ 'experiences.card1.company' | translate}}"></app-experience-card>
+        </div>
+        <div class="exp-card-container">
+            <div class="horizontal-line" [class.hor-width]="horizontalLines[2].active"></div>
+            <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[2].active" [experienceList]="websiteExperiences" title="{{ 'experiences.card3.title' | translate}}" company="{{ 'experiences.card3.company' | translate}}"></app-experience-card>
+        </div>
+        <div class="line" [style.height.px]="centerLineHeight" [style.background]="color"></div>
     </div>
 </section>

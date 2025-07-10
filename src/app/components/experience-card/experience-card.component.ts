@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ExperienceCardComponent {
   @Input() title: String = '';
+  @Input() company: String = '';
   @Input() experienceList: string[] = []
 
   constructor(private translate: TranslateService){ }

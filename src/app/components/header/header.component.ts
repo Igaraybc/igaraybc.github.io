@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -11,16 +11,30 @@ export class HeaderComponent {
     this.translate.use('pt');
   }
 
-  currentLang: String = 'pt';
+  currentLang: String = '';
   isMenuOpen: boolean = false;
+  dropdownMenuOpened = false;
+  @Output() OnMenuOpen = new EventEmitter<boolean>();
+
+  ngOnInit(){
+    const local = localStorage.getItem('lang');
+    this.currentLang = local ? local : 'pt';
+  }
+
+  openDropdownMenu(){
+    this.dropdownMenuOpened = this.dropdownMenuOpened ? false : true;
+  }
 
   switchLanguage(lang: string) {
+    localStorage.setItem('lang', lang);
     this.currentLang = lang;
     this.translate.use(lang);
+    this.dropdownMenuOpened = false;
   }
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+    this.OnMenuOpen.emit(this.isMenuOpen);
   }
 
   scrollToSection(section: string){

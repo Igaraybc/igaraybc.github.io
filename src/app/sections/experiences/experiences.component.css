@@ -1,6 +1,6 @@
 #experiences{
     background-color: black;
-    padding: 50px 0px 9%;
+    padding: 60px 0px;
 
     position: relative;
 }
@@ -9,165 +9,110 @@
     color: white;
     text-align: center;
 
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 .cards-container{
+    position: relative;
+    padding: 60px 5% 30px;
+}
+
+.exp-card-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 0px 5%;
-
 }
 
 .exp-card{
-    display: flex;
+    width: 40%;
+    opacity: 0;
+    transition: all 1s;
 }
 
-#card-1, #card-3{
+/*styles for odd and even cards*/
+.exp-card-container:nth-child(odd){
     justify-content: end;
 }
 
-#card-2{
-    margin-top: -200px;
+.exp-card-container:nth-child(even) .exp-card{
+    transform: translateX(20px);
 }
 
-#card-3{
-    margin-top: -50px;
+.exp-card-container:nth-child(odd) .exp-card{
+    transform: translateX(-20px);
 }
 
-#card-1::before, #card-3::before, #card-2::after{
-    content: '';
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #FFCD1D;
-    position: relative;
-    min-width: 35px;
-    z-index: 2;
-}
-
-#card-1::before, #card-3::before{
-    left: 15px;
-    top: 20px;
-}
-
-#card-2::after{
-    right: 15px;
-    top: 20px;
+.translate-0{
+    transform: translateX(0px) !important;
+    opacity: 1;
 }
 
 .line{
     position: absolute;
-    top: 237px;
+    top: 0px;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 2.5px; 
-    height: 80%; 
-    background-color: #FFCD1D;
+    width: 12px; 
+    border-radius: 3px;
+    /*height: 108%; */
+    /*background-color: #FFCD1D;*/
     z-index: 0;
 }
 
-.horizontal-line-rig, .horizontal-line-lef{
-    position: relative;
-    width: 30%; 
-    height: 2.5px; 
+.horizontal-line{
+    position: absolute;
+    width: 0px;
+    margin-top: 38px;
+    height: 10px; 
+    border-radius: 2px;
     background-color: #FFCD1D;
     z-index: 0;
+    transition: width .5s ease-in;
 }
 
-.horizontal-line-rig{
-    left: 50%; 
+.exp-card-container:nth-child(odd) .horizontal-line{
+    left: 50%;
 }
 
-.horizontal-line-lef{
-    left: 20%;
+.exp-card-container:nth-child(even) .horizontal-line{
+    right: 50%;
 }
 
-.line-1{
-    top: 37.5px;
+.hor-width{
+    width: 10%;
 }
 
-.line-2{
-    top: -162.5px;
-} 
 
-.line-3{
-    top: -12.5px;
-}
-
-@media(max-width: 830px){
-    #card-1{
-        justify-content: center;
+@media(max-width: 800px){
+    .cards-container > .exp-card-container {
+        /*Override the odd card rule */
+        justify-content: start;
+        margin-bottom: 50px;
     }
 
-    #card-2{
-        margin-top: 0px;
-        justify-content: center;
-    }
-    
-    #card-3{
-        margin-top: 0px;
-        justify-content: center;
+    .exp-card-container:nth-child(even) .exp-card,
+    .exp-card-container:nth-child(odd) .exp-card { 
+        transform: translateX(-20px);
     }
 
-    #card-2::after{
-        display: none;
-    }
-
-    #card-2::before {
-        content: '';
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        background-color: #FFCD1D;
-        position: relative;
-        left: 15px;
-        top: 20px;
-        min-width: 35px;
-        z-index: 2;
-    }
-    
-    .line{
-        left: 50px;
-        top: 237px; 
-    }
-
-    .line-1, .line-2, .line-3{
-        top: 37.5px;
-        left: 11px;
-    }
-        
-}
-
-@media(max-width: 768px){
-    .line{
-        top: 223px; 
+    .exp-card-container:nth-child(even) .horizontal-line,
+    .exp-card-container:nth-child(odd) .horizontal-line {
+        left: 5%;
     }
 
     .exp-card{
-        margin: 25px 0px;
+        margin-left: 10%;
+        width: 80%;
     }
 
-    #card-1{
-        margin-top: 0px;
-    }
-}
-
-@media(max-width: 749px){
     .line{
-        left: 6.7%;
+        left: 5%;
     }
+
+        
 }
 
 @media(max-width: 425px){
     .line{
         display: none;
-    }
-
-    .line-1, .line-2, .line-3{
-        left: -6%;
     }
     
     .cards-container{

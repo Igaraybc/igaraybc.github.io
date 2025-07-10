@@ -116,10 +116,4 @@ export class PortfolioSliderComponent {
     }
   }
 
-  zoomSlide(){
-    if(window.innerWidth <= 500){
-      console.log("zoom...")
-    }
-  }
-
 }

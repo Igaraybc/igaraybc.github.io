@@ -1,7 +1,8 @@
-<div class="card-container">
+<div class="card">
     <div class="experience-title">{{title}}</div>
-    <ul *ngFor="let exp of experienceList">
-        <li>{{translateItem(exp)}}</li>
+    <div class="experience-company"><i>{{company}}</i></div>
+    <ul>
+        <li *ngFor="let exp of experienceList">{{translateItem(exp)}}</li>
     </ul>
 </div>
 

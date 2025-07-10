@@ -1,36 +1,48 @@
-.card-container{
+.card{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
 
     padding: 30px;
-    margin-bottom: 20px;
 
-    width: 35%;
     min-width: 200px;
     position: relative;
     z-index: 1;
 }
 
-.experience-title{
+.experience-title, .experience-company{
     font-family: 'poppins', sans-serif;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.experience-title{
     font-weight: bold;
     font-size: 20px;
-    margin-left: 10px;
-    margin-bottom: 30px;
+}
+
+.experience-company{
+    font-size: 14px;
 }
 
 ul {
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 20px;
+    padding-left: 12px;
+    list-style:none;
+}
+
+li{
+    margin-bottom: 15px;
+    color: #474747;
 }
 
 @media(max-width: 830px){
-    .card-container{
-        width: 70%;
-    }
-
     .experience-title{
         font-size: 18px;
+    }
+
+    .experience-company{
+        font-size: 10px;
     }
 
     li{

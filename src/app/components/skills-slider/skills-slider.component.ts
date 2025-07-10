@@ -13,21 +13,20 @@ export class SkillsSliderComponent {
   skills: {name: String, icon: String, fontAwesome?: boolean}[] = 
   [
     {name: 'Angular', icon: 'fa-angular'},
-    {name: 'TypeScript', icon: 'assets/icons/typescript.svg',  fontAwesome: false},
-    {name: 'JavaScript', icon: 'fa-square-js'},
-    {name: 'Java', icon: 'fa-java'},
-    {name: 'Github', icon: 'fa-github'},
-    {name: 'HTML', icon: 'fa-html5'},
-    {name: 'CSS', icon: 'fa-css3-alt'},
     {name: 'React.js', icon: 'fa-react'},
     {name: 'Wordpress', icon: 'fa-wordpress-simple'},
+    {name: 'TypeScript', icon: 'assets/icons/typescript.svg',  fontAwesome: false},
+    {name: 'Node.js', icon: 'fa-node-js'},
+    {name: 'Java', icon: 'fa-java'},
+    {name: 'JavaScript', icon: 'fa-square-js'},
+    {name: 'HTML', icon: 'fa-html5'},
+    {name: 'CSS', icon: 'fa-css3-alt'},
+    {name: 'Github', icon: 'fa-github'},
+    {name: 'MongoDB', icon: 'assets/icons/mongodb.svg',  fontAwesome: false},
+    {name: 'MySQL', icon: 'assets/icons/mysql.svg',  fontAwesome: false},
     {name: 'Vue.js', icon: 'fa-vuejs'},
     {name: 'Python', icon: 'fa-python'},
-    {name: 'C', icon: 'assets/icons/C-brand.svg',  fontAwesome: false},
-    {name: 'MongoDB', icon: 'assets/icons/mongodb.svg',  fontAwesome: false},
     {name: 'Bootstrap', icon: 'fa-bootstrap'},
-    {name: 'MySQL', icon: 'assets/icons/mysql.svg',  fontAwesome: false},
-    {name: 'Node.js', icon: 'fa-node-js'},
   ]
   
 
