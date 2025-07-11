@@ -7,10 +7,12 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./experiences.component.css']
 })
 export class ExperiencesComponent {
-  capgeminiExperiences: string[] = this.getExperienceList("card1", 5);
-  impulseExperiences: string[] = this.getExperienceList("card2", 5);
-  sttpExperiences: string[] = this.getExperienceList("card3", 4);
-  websiteExperiences: string[] = this.getExperienceList("card4", 4);
+  experienceCards: {experienceList:string[], titleKey:string, companyKey:string}[] = [
+    this.getExperienceInfo("card1", 5),
+    this.getExperienceInfo("card2", 5),
+    this.getExperienceInfo("card3", 4),
+    this.getExperienceInfo("card4", 4)
+  ];
 
   centerLineHeight: number = 0;
   color:string = '#FFCD1D';
@@ -29,8 +31,8 @@ export class ExperiencesComponent {
     const currentScroll = window.scrollY;
 
     if(currentScroll >= (sectionTop-30)){
-      if(currentScroll-sectionTop+50 < sectionSize-180){
-        this.centerLineHeight = (currentScroll - sectionTop) + 50;
+      if(currentScroll-sectionTop+50 < sectionSize-230){
+        this.centerLineHeight = (currentScroll - sectionTop) + 150;
       }
       else{
         this.centerLineHeight = sectionSize - 180;
@@ -56,20 +58,25 @@ export class ExperiencesComponent {
       {top: horLine3Top, active: false},
       {top: horLine4Top, active: false}
     ]
+
+    let heightRef = window.innerWidth <= 520? this.centerLineHeight-10 : this.centerLineHeight+30
     
     this.horizontalLines.forEach(line => {
-      line.active = this.centerLineHeight-10 >= line.top;
+      line.active = heightRef >= line.top;
     })
-    
   }
 
   constructor(private translate: TranslateService){ }
 
-  getExperienceList(cardName:string, quantity:number){
+  getExperienceInfo(cardName:string, quantity:number){
     let experiences = [];
     for (let index = 1; index <= quantity; index++) {
       experiences.push(`experiences.${cardName}.item${index}`)
     }
-    return experiences;
+    return {
+      experienceList: experiences,
+      titleKey: `experiences.${cardName}.title`,
+      companyKey: `experiences.${cardName}.company`
+    }
   }
 }
