@@ -1,12 +1,14 @@
 <div class="card">
-    <div class="experience-title">{{title}}</div>
-    <div class="experience-company"><i>{{company}}</i></div>
-    <ul>
-        <li *ngFor="let exp of experienceList">{{translateItem(exp)}}</li>
-    </ul>
+  <div class="experience-title">{{title}}</div>
+  <div class="experience-company"><i>{{company}}</i></div>
+  <ul>
+    @for (exp of experienceList; track exp) {
+      <li>{{translateItem(exp)}}</li>
+    }
+  </ul>
 </div>
 
- 
 
- 
- 
+
+
+

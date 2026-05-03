@@ -3,28 +3,15 @@
     {{ 'experiences.title' | translate }}<span class="yellow-point">.</span>
   </h1>
   <div class="cards-container">
-    <div
-      class="exp-card-container"
-      *ngFor="let card of experienceCards; let i = index"
-    >
-      <div
-        class="horizontal-line"
-        [class.hor-width]="horizontalLines[i].active"
-      ></div>
+    @for(card of experienceCards; track card; let i = $index) {
+      <div class="exp-card-container">
+        <div class="horizontal-line" [class.hor-width]="horizontalLines[i]?.active"></div>
+        <app-experience-card class="exp-card" [class.translate-0]="horizontalLines[i]?.active"
+          [experienceList]="card.experienceList" [title]="card.titleKey | translate"
+          [company]="card.companyKey | translate"></app-experience-card>
+      </div>
+    }
 
-      <app-experience-card
-        class="exp-card"
-        [class.translate-0]="horizontalLines[i].active"
-        [experienceList]="card.experienceList"
-        [title]="card.titleKey | translate"
-        [company]="card.companyKey | translate"
-      ></app-experience-card>
-    </div>
-
-    <div
-      class="line"
-      [style.height.px]="centerLineHeight"
-      [style.background]="color"
-    ></div>
+    <div class="line" [style.height.px]="centerLineHeight" [style.background]="color"></div>
   </div>
 </section>

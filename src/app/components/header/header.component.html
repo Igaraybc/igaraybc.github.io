@@ -1,30 +1,36 @@
 <section id="header">
-    <nav class="nav-items">
-        <div class="toggle-button-container">
-        <div class="toggle-button" (click)="toggleMenu()" [ngClass]="{'active': isMenuOpen}">
-            <span class="bar bar-top"></span>
-            <span class="bar bar-middle"></span>
-            <span class="bar bar-bottom"></span>
-        </div>
+  <nav class="nav-items">
+    <div class="toggle-button-container">
+      <div class="toggle-button" (click)="toggleMenu()" [ngClass]="{'active': isMenuOpen}">
+        <span class="bar bar-top"></span>
+        <span class="bar bar-middle"></span>
+        <span class="bar bar-bottom"></span>
+      </div>
     </div>
-        <ul class="menu-container" [ngClass]="{'active': isMenuOpen}">
-            <li><a (click)="scrollToSection('about-me')" class="menu-item">{{ 'header.aboutMe' | translate}}</a></li>
-            <li><a (click)="scrollToSection('skills')" class="menu-item">{{ 'header.skills' | translate }}</a></li>
-            <li><a (click)="scrollToSection('experiences')" class="menu-item">{{ 'header.experiences' | translate }}</a></li>
-            <li><a (click)="scrollToSection('portfolio')" class="menu-item">{{ 'header.portfolio' | translate }}</a></li>
-            <li class="btn-item"><a (click)="scrollToSection('contact')" class="menu-item" >{{ 'header.contact' | translate }}</a></li>    
-        </ul>
-    </nav>
-    <div class="lang-menu">
-        <div class="btns">
-            <a  (click)="openDropdownMenu()" class="btn-lang">
-                <i *ngIf="currentLang == 'en'" class="fa fa-earth-americas"></i>
-                <img *ngIf="currentLang == 'pt'" src="assets/img/flag-circle.png" width="18px">
-                <i class="fa-solid fa-caret-down"></i></a>
-            <div class="dropdown-menu" *ngIf="dropdownMenuOpened">
-                <div class="op1" (click)="switchLanguage('pt')" >Pt</div>
-                <div class="op2" (click)="switchLanguage('en')">En</div>
-            </div>
-        </div>
+    <ul class="menu-container" [ngClass]="{'active': isMenuOpen}">
+      <li><a (click)="scrollToSection('about-me')" class="menu-item">{{ 'header.aboutMe' | translate}}</a></li>
+      <li><a (click)="scrollToSection('skills')" class="menu-item">{{ 'header.skills' | translate }}</a></li>
+      <li><a (click)="scrollToSection('experiences')" class="menu-item">{{ 'header.experiences' | translate }}</a></li>
+      <li><a (click)="scrollToSection('portfolio')" class="menu-item">{{ 'header.portfolio' | translate }}</a></li>
+      <li class="btn-item"><a (click)="scrollToSection('contact')" class="menu-item" >{{ 'header.contact' | translate }}</a></li>
+    </ul>
+  </nav>
+  <div class="lang-menu">
+    <div class="btns">
+      <a  (click)="openDropdownMenu()" class="btn-lang">
+        @if (currentLang == 'en') {
+          <i class="fa fa-earth-americas"></i>
+        }
+        @if (currentLang == 'pt') {
+          <img src="assets/img/flag-circle.png" width="18px">
+        }
+        <i class="fa-solid fa-caret-down"></i></a>
+        @if (dropdownMenuOpened) {
+          <div class="dropdown-menu">
+            <div class="op1" (click)="switchLanguage('pt')" >Pt</div>
+            <div class="op2" (click)="switchLanguage('en')">En</div>
+          </div>
+        }
+      </div>
     </div>
-</section>
+  </section>
