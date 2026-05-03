@@ -1,10 +1,11 @@
 import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-portfolio-slider',
     templateUrl: './portfolio-slider.component.html',
     styleUrls: ['./portfolio-slider.component.css'],
-    standalone: false
+    imports: [TranslatePipe]
 })
 export class PortfolioSliderComponent {
   

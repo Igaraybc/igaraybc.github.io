@@ -8,8 +8,8 @@ describe('PortfolioSliderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PortfolioSliderComponent]
-    });
+    imports: [PortfolioSliderComponent]
+});
     fixture = TestBed.createComponent(PortfolioSliderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

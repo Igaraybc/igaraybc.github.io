@@ -1,15 +1,15 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, TranslatePipe } from '@ngx-translate/core';
+import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.css'],
-    standalone: false
+    imports: [NgClass, TranslatePipe]
 })
 export class HeaderComponent {
   constructor(private translate: TranslateService){ 
-    this.translate.use('pt');
   }
 
   currentLang: String = '';

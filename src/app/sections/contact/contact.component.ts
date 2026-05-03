@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-contact',
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.css'],
-    standalone: false
+    imports: [TranslatePipe]
 })
 export class ContactComponent {
   classIcon = 'none';
-  constructor(private translate: TranslateService){ }
+  constructor(){ }
 }

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
+import { SkillsSliderComponent } from '../../components/skills-slider/skills-slider.component';
 
 @Component({
     selector: 'app-skills',
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.css'],
-    standalone: false
+    imports: [SkillsSliderComponent, TranslatePipe]
 })
 export class SkillsComponent {
-  constructor(private translate: TranslateService){ }
+  constructor(){ }
 }

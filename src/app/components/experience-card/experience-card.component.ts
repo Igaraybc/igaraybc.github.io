@@ -4,8 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
     selector: 'app-experience-card',
     templateUrl: './experience-card.component.html',
-    styleUrls: ['./experience-card.component.css'],
-    standalone: false
+    styleUrls: ['./experience-card.component.css']
 })
 export class ExperienceCardComponent {
   @Input() title: String = '';

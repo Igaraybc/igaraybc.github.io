@@ -1,11 +1,12 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
+import { ExperienceCardComponent } from '../../components/experience-card/experience-card.component';
 
 @Component({
     selector: 'app-experiences',
     templateUrl: './experiences.component.html',
     styleUrls: ['./experiences.component.css'],
-    standalone: false
+    imports: [ExperienceCardComponent, TranslatePipe]
 })
 export class ExperiencesComponent {
   experienceCards: {experienceList:string[], titleKey:string, companyKey:string}[] = [
@@ -67,7 +68,7 @@ export class ExperiencesComponent {
     })
   }
 
-  constructor(private translate: TranslateService){ }
+  constructor(){ }
 
   getExperienceInfo(cardName:string, quantity:number){
     let experiences = [];

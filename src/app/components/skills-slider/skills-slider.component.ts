@@ -1,10 +1,11 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { SkillCardComponent } from '../skill-card/skill-card.component';
 
 @Component({
     selector: 'app-skills-slider',
     templateUrl: './skills-slider.component.html',
     styleUrls: ['./skills-slider.component.css'],
-    standalone: false
+    imports: [SkillCardComponent]
 })
 export class SkillsSliderComponent {
 
@@ -85,7 +86,6 @@ export class SkillsSliderComponent {
   }
   
   onDotClick(index: number) {
-    console.log(`current: ${this.currentSlideIndex}, index: ${index}`);
     if(index == 0 && this.currentSlideIndex == this.skills.length-1){
       this.nextSlide();
     }

@@ -8,8 +8,8 @@ describe('SkillCardComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SkillCardComponent]
-    });
+    imports: [SkillCardComponent]
+});
     fixture = TestBed.createComponent(SkillCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

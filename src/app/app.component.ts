@@ -1,22 +1,20 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './sections/home/home.component';
+import { AboutMeComponent } from './sections/about-me/about-me.component';
+import { SkillsComponent } from "./sections/skills/skills.component";
+import { PortfolioComponent } from "./sections/portfolio/portfolio.component";
+import { ContactComponent } from "./sections/contact/contact.component";
+import { ExperiencesComponent } from './sections/experiences/experiences.component';
 
 @Component({
     selector: 'app-root',
+    imports: [HeaderComponent, HomeComponent, AboutMeComponent, SkillsComponent, PortfolioComponent, ContactComponent, ExperiencesComponent],
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
-    standalone: false
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'project-portfolio';
-  constructor(private translate: TranslateService) {
-    const local = localStorage.getItem('lang');
-    if(local){
-      translate.use(local);
-    }
-    else{
-      translate.setDefaultLang('pt'); // Defina o idioma padrão
-    }
-  }
+  constructor() { }
 
 }
