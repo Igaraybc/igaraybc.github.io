@@ -16,43 +16,36 @@ import { ExperienceCardComponent } from './components/experience-card/experience
 import { PortfolioComponent } from './sections/portfolio/portfolio.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/languages/', '.json');
 }
 
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    AboutMeComponent,
-    SkillsComponent,
-    ExperiencesComponent,
-    ContactComponent,
-    SkillCardComponent,
-    SkillsSliderComponent,
-    PortfolioSliderComponent,
-    ExperienceCardComponent,
-    PortfolioComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserModule,
-    HttpClientModule,
-    TranslateModule.forRoot({
-      defaultLanguage: 'pt',
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        HomeComponent,
+        AboutMeComponent,
+        SkillsComponent,
+        ExperiencesComponent,
+        ContactComponent,
+        SkillCardComponent,
+        SkillsSliderComponent,
+        PortfolioSliderComponent,
+        ExperienceCardComponent,
+        PortfolioComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserModule,
+        TranslateModule.forRoot({
+            defaultLanguage: 'pt',
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
