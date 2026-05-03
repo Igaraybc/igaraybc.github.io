@@ -2,9 +2,10 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-experiences',
-  templateUrl: './experiences.component.html',
-  styleUrls: ['./experiences.component.css']
+    selector: 'app-experiences',
+    templateUrl: './experiences.component.html',
+    styleUrls: ['./experiences.component.css'],
+    standalone: false
 })
 export class ExperiencesComponent {
   experienceCards: {experienceList:string[], titleKey:string, companyKey:string}[] = [

@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-experience-card',
-  templateUrl: './experience-card.component.html',
-  styleUrls: ['./experience-card.component.css']
+    selector: 'app-experience-card',
+    templateUrl: './experience-card.component.html',
+    styleUrls: ['./experience-card.component.css'],
+    standalone: false
 })
 export class ExperienceCardComponent {
   @Input() title: String = '';

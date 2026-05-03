@@ -1,9 +1,10 @@
 import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio-slider',
-  templateUrl: './portfolio-slider.component.html',
-  styleUrls: ['./portfolio-slider.component.css']
+    selector: 'app-portfolio-slider',
+    templateUrl: './portfolio-slider.component.html',
+    styleUrls: ['./portfolio-slider.component.css'],
+    standalone: false
 })
 export class PortfolioSliderComponent {
   

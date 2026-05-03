@@ -1,9 +1,10 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-skills-slider',
-  templateUrl: './skills-slider.component.html',
-  styleUrls: ['./skills-slider.component.css']
+    selector: 'app-skills-slider',
+    templateUrl: './skills-slider.component.html',
+    styleUrls: ['./skills-slider.component.css'],
+    standalone: false
 })
 export class SkillsSliderComponent {
 
