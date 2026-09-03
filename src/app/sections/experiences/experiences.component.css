@@ -24,7 +24,9 @@
 .exp-card{
     width: 40%;
     opacity: 0;
-    transition: all 1s;
+     transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
 }
 
 /*styles for odd and even cards*/
@@ -65,7 +67,7 @@
     border-radius: 2px;
     background-color: #FFCD1D;
     z-index: 0;
-    transition: width .5s ease-in;
+    transition: width 0.6s ease-in-out;
 }
 
 .exp-card-container:nth-child(odd) .horizontal-line{

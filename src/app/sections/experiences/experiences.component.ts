@@ -1,84 +1,118 @@
-import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-import { TranslatePipe } from '@ngx-translate/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { ExperienceCardComponent } from '../../components/experience-card/experience-card.component';
 
 @Component({
-    selector: 'app-experiences',
-    templateUrl: './experiences.component.html',
-    styleUrls: ['./experiences.component.css'],
-    imports: [ExperienceCardComponent, TranslatePipe]
+  selector: 'app-experiences',
+  templateUrl: './experiences.component.html',
+  styleUrls: ['./experiences.component.css'],
+  imports: [ExperienceCardComponent, TranslatePipe]
 })
-export class ExperiencesComponent {
-  experienceCards: {experienceList:string[], titleKey:string, companyKey:string}[] = [
-    this.getExperienceInfo("card1", 5),
-    this.getExperienceInfo("card2", 5),
-    this.getExperienceInfo("card3", 4),
-    this.getExperienceInfo("card4", 4)
-  ];
+export class ExperiencesComponent implements OnInit {
+  experienceCards: { experienceList: string[], titleKey: string, companyKey: string }[] = [];
 
   centerLineHeight: number = 0;
-  color:string = '#FFCD1D';
-  horizontalLines: {top:number, active:boolean}[] = [{top:0, active:false}];
+  color: string = '#FFCD1D';
+  horizontalLines: { top: number, active: boolean }[] = [{ top: 0, active: false }];
 
-  @ViewChild('experienceSection', {static: true}) section:ElementRef | undefined;
+  @ViewChild('experienceSection', { static: true }) section: ElementRef | undefined;
 
-  @HostListener('window:scroll') onWindowScroll(){
+  @HostListener('window:scroll') onWindowScroll() {
     this.centerLineAnimated();
     this.horizontalLineAnimated();
   }
 
-  centerLineAnimated(){
-    const sectionTop = this.section?.nativeElement.offsetTop; 
-    const sectionSize = this.section?.nativeElement.offsetHeight;
-    const currentScroll = window.scrollY;
-
-    if(currentScroll >= (sectionTop-30)){
-      if(currentScroll-sectionTop+50 < sectionSize-230){
-        this.centerLineHeight = (currentScroll - sectionTop) + 150;
-      }
-      else{
-        this.centerLineHeight = sectionSize - 180;
-      }
-    }
-    else if(currentScroll < (sectionTop+30)){
-      //While I'm not in the experience section
+  centerLineAnimated() {
+    const section = this.section?.nativeElement as HTMLElement | undefined;
+    if (!section) {
       this.centerLineHeight = 0;
+      return;
     }
+
+    const currentScroll = window.scrollY;
+    const sectionTop = section.getBoundingClientRect().top + currentScroll;
+
+    const title = section.querySelector('.title-text') as HTMLElement | null;
+    const titleHeight = title ? title.getBoundingClientRect().height : 50;
+
+    const cardsContainer = section.querySelector('.cards-container') as HTMLElement | null;
+    const cardsContainerTop = cardsContainer
+      ? cardsContainer.getBoundingClientRect().top + currentScroll
+      : sectionTop + titleHeight;
+
+    const startOffset = titleHeight + 30;
+
+    if (currentScroll < sectionTop + startOffset) {
+      this.centerLineHeight = 0;
+      return;
+    }
+
+    const visualOffset = 150;
+    const maxHeight = Math.max(0, section.offsetHeight - titleHeight - 120);
+
+    this.centerLineHeight = Math.min(
+      Math.max(currentScroll - cardsContainerTop + visualOffset, 0),
+      maxHeight
+    );
   }
 
-  horizontalLineAnimated(){
-    const cardsContainer = this.section?.nativeElement.children[1];
-    //The start position of each horizontal line
-    const horLine1Top = cardsContainer.children[0].children[0].offsetTop;
-    const horLine2Top = cardsContainer.children[1].children[0].offsetTop;
-    const horLine3Top = cardsContainer.children[2].children[0].offsetTop;
-    const horLine4Top = cardsContainer.children[3].children[0].offsetTop;
+  horizontalLineAnimated() {
+    const section = this.section?.nativeElement as HTMLElement | undefined;
+    const cardsContainer = section?.querySelector('.cards-container') as HTMLElement | null;
 
-    this.horizontalLines = [
-      {top: horLine1Top, active: false},
-      {top: horLine2Top, active: false},
-      {top: horLine3Top, active: false},
-      {top: horLine4Top, active: false}
-    ]
+    if (!cardsContainer) {
+      return;
+    }
 
-    let heightRef = window.innerWidth <= 520? this.centerLineHeight-10 : this.centerLineHeight+30
-    
-    this.horizontalLines.forEach(line => {
+    const cardContainers = Array.from(
+      cardsContainer.querySelectorAll<HTMLElement>('.exp-card-container')
+    );
+
+    this.horizontalLines = cardContainers.map((card) => {
+      const horizontalLine = card.querySelector<HTMLElement>('.horizontal-line');
+
+      return {
+        top: horizontalLine ? horizontalLine.offsetTop : 0,
+        active: false
+      };
+    });
+
+    if (this.horizontalLines.length === 0) {
+      return;
+    }
+
+    const heightRef =
+      window.innerWidth <= 520
+        ? this.centerLineHeight - 10
+        : this.centerLineHeight + 30;
+
+    this.horizontalLines.forEach((line) => {
       line.active = heightRef >= line.top;
-    })
+    });
   }
 
-  constructor(){ }
+  constructor(private translate: TranslateService) { }
 
-  getExperienceInfo(cardName:string, quantity:number){
-    let experiences = [];
-    for (let index = 1; index <= quantity; index++) {
-      experiences.push(`experiences.${cardName}.item${index}`)
-    }
+  ngOnInit() {
+    this.translate.get('experiences.cards').subscribe((cards: any[]) => {
+      this.experienceCards = cards.map((card, cardIndex) =>
+        this.getExperienceInfo({
+          cardIndex,
+          items: card.items ?? []
+        })
+      );
+    });
+  }
+
+  getExperienceInfo(experience: { cardIndex: number; items: string[] }) {
+    const cardKey = `experiences.cards.${experience.cardIndex}`;
+
     return {
-      experienceList: experiences,
-      titleKey: `experiences.${cardName}.title`,
-      companyKey: `experiences.${cardName}.company`
-    }
+      experienceList: experience.items.map((_, itemIndex) =>
+        `${cardKey}.items.${itemIndex}`
+      ),
+      titleKey: `${cardKey}.title`,
+      companyKey: `${cardKey}.company`
+    };
   }
 }
