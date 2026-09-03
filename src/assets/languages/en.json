@@ -1,9 +1,9 @@
  {
     "header": {
         "aboutMe": "About me",
-        "skills": "Skills",
-        "experiences": "Experiences",
-        "portfolio": "Portfolio",
+        "skills": "Technologies & Tools",
+        "experiences": "Professional Experience",
+        "portfolio": "Featured Projects",
         "contact": "Contact"
     },
     "home":{
@@ -14,54 +14,64 @@
     },
     "aboutMe": {
         "title": "About Me",
-        "text": "Hi! I’m Ígara Yasmin, a Computer Engineering graduate who has dedicated the past few years to studying and building a career in software development. I’ve been strengthening my skills in various programming languages, frameworks, and agile methodologies. I’ve worked on diverse projects, collaborating with multidisciplinary teams, especially on the frontend using Angular, React.js, and WordPress. More recently, I’ve been working as a fullstack developer with C#, using technologies such as ASP.NET and Blazor, contributing to both backend and frontend of web applications. I’m excited to take on new challenges, explore meaningful opportunities, and continue growing as a professional. If you’re interested in collaborating or learning more about me, feel free to get in touch!",
+        "text": "I'm a Computer Engineer and Full Stack Developer with over 4 years of experience creating web applications, enterprise solutions, and professional websites. Throughout my journey, I have collaborated with companies across different industries, delivering scalable and user-focused solutions while working on both frontend and backend development in agile teams. I have hands-on experience with technologies such as C#, ASP.NET, Blazor, Angular, React, JavaScript, Node.js, and WordPress, allowing me to build complete digital products from concept to deployment. Currently, I work at Capgemini, where I contribute to high-impact projects for leading financial clients, helping transform business requirements into reliable and innovative software solutions. Passionate about technology and continuous learning, I strive to create digital experiences that combine performance, usability, and business value.",
         "buttonCV": "Download CV",
         "buttonContact": "Contact"
     },
     "skills":{
-        "title": "Skills",
-        "subtitle": "Programming tools I've used:"
+        "title": "Technologies & Tools",
+        "subtitle": "Technologies and tools I use to build modern, scalable, and user-centered applications."
     },
     "experiences":{
-        "title": "Experiences",
-        "card1":{
-            "title": "Fullstack Developer",
-            "company": "Campgemini Brazil",
-            "item1": "Fullstack developer working with C#, ASP.NET, and Blazor on internal projects and for major clients.",
-            "item2":"Highlighted experience in challenging projects for the client Ágora Investimentos (Bradesco Banking).",
-            "item3":"Frontend contributions, turning prototypes into intuitive and functional user interfaces.",
-            "item4": "Active involvement in backend development, implementing and integrating new features into the codebase.",
-            "item5": "Experience with Azure DevOps for task management, code versioning, and CI/CD pipeline automation."
-        },
-        "card2":{
-            "title": "Software Developer",
-            "company": "Impulse Business Solutions",
-            "item1": "Front-end web development of CRUD systems and websites using HTML, CSS, React.js, JavaScript, Wordpress;",
-            "item2": "Back-end development of CRUD systems using Node.js with mongoDB and MySQL databases;",
-            "item3": "Development of conversational flows using zenvia flow;",
-            "item4": "Development of the requirements document of a project related to municipal education;",
-            "item5": "Use of the Scrum methodology."
-        },
-        "card3":{
-            "title": "Front-end Developer",
-            "company": "STTP - Superintendency of Traffic and Public Transportation",
-            "item1": "Front-end web development of CRUD systems and websites using HTML, CSS, Angular, TypeScript, Bootstrap;",
-            "item2": "Back-end web development of CRUD systems using Node.js with mongoDB;",
-            "item3": "Some adjustments in PHP codes;",
-            "item4": "Git for project versioning."
-        },
-        "card4":{
-            "title": "Website Developer",
-            "company": "Websites development:",
-            "item1": "ocosmodesign.com",
-            "item2": "auriceliamassoterapia.com",
-            "item3": "audisomca.com.br/lp",
-            "item4": "raymondosero.com"
-        }
+        "title": "Professional Experience",
+        "topicTitle": "Main responsibilities:",
+        "cards": [
+            {
+                "title": "Full Stack Developer",
+                "company": "Capgemini Brazil",
+                "items": [
+                    "Working on the development of enterprise applications using C#, ASP.NET, and Blazor, participating in all stages of the software development lifecycle, from feature implementation to system maintenance and continuous improvement.",
+                    "Key Responsibilities:",
+                    "• Developing full stack solutions for internal projects and large-scale clients.",
+                    "• Contributing to strategic projects for clients in the financial services sector.",
+                    "• Transforming business requirements and prototypes into modern, intuitive user interfaces.",
+                    "• Developing and integrating backend functionalities.",
+                    "• Utilizing Azure DevOps and Jira for task management, source control, and CI/CD pipelines.",
+                    "• Collaborating with multidisciplinary teams in agile development environments."
+                ]
+            },
+            {
+                "title": "Software Developer",
+                "company": "Impulse Business Solutions",
+                "items": [
+                    "Developed web applications, corporate websites, and customized digital solutions, actively contributing to both software development and business requirements analysis.",
+                    "Key Responsibilities:",
+                    "• Developing responsive and interactive user interfaces with React.js, JavaScript, HTML, and CSS.",
+                    "• Building and maintaining WordPress websites tailored to client needs.",
+                    "• Developing backend services using Node.js, MongoDB, and MySQL.",
+                    "• Designing conversational workflows through Zenvia Flow.",
+                    "• Gathering requirements and producing documentation for educational technology projects.",
+                    "• Working within Scrum-based agile teams, contributing to planning, development, and successful project delivery."
+                ]
+            },
+            {
+                "title": "Front-end Developer",
+                "company": "STTP - Superintendency of Traffic and Public Transportation",
+                "items": [
+                    "Contributed to the development and maintenance of internal systems and web applications that supported administrative operations and digital services.",
+                    "Key Responsibilities:",
+                    "• Developing responsive and user-friendly interfaces with Angular, TypeScript, HTML, CSS, and Bootstrap.",
+                    "• Supporting backend development using Node.js and MongoDB.",
+                    "• Maintaining and improving legacy applications built with PHP.",
+                    "• Managing source code and collaboration workflows through Git.",
+                    "• Building and maintaining CRUD applications and institutional web portals."
+                ]
+            }
+        ]
     },
     "portfolio":{
-        "title": "Portfolio",
-        "subtitle": "Websites and applications I’ve developed throughout my journey as a developer.",
+        "title": "Featured Projects",
+        "subtitle": "In addition to my experience in corporate environments and enterprise projects, I design and develop custom websites for businesses and professionals across a wide range of industries.Leveraging WordPress, HTML, CSS, and JavaScript, I build modern, responsive, and user-focused websites that align with each client's goals. My approach combines clean design, performance, and usability to deliver impactful digital experiences.",
         "scrollText": "SCROLL  DOWN"
     },
     "contact":{

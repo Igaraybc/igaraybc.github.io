@@ -1,6 +1,6 @@
 #header{
     margin: 0;
-    padding: 20px 0px 0px;
+    padding: 40px 0px 0px;
     background-color: #F5F5F5; 
 
     position: relative;
@@ -48,7 +48,7 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: 600;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .menu-item:hover,.btn-item:hover{
@@ -126,8 +126,13 @@
 }
 
 .toggle-button-container{
-    position: relative;
+    position: fixed;
     padding-left: 30px;
+    z-index: 5;
+}
+
+.toggle-button-container:has(.toggle-button.active){
+    position: absolute;
 }
   
 .toggle-button {
@@ -152,6 +157,10 @@
     position: absolute;
     left: 26px;
     top: 4px;
+}
+
+.toggle-button-container:has(.toggle-button.active)::before{
+    display: none;
 }
 
 .toggle-button.active::after{

@@ -1,9 +1,9 @@
 {
     "header": {
         "aboutMe": "Sobre mim",
-        "skills": "Habilidades",
-        "experiences": "Experiências",
-        "portfolio": "Portfólio",
+        "skills": "Tecnologias e Ferramentas",
+        "experiences": "Experiência Profissional",
+        "portfolio": "Projetos em destaque",
         "contact": "Contato"
     },
     "home":{
@@ -26,13 +26,13 @@
         "title": "Experiência Profissional",
         "cards": [
             {
-            "title": "Desenvolvedora Fullstack",
+            "title": "Desenvolvedora Full Stack",
             "company": "Capgemini Brasil",
             "items":[
                 "Atuação no desenvolvimento de aplicações corporativas utilizando C#, ASP.NET e Blazor, participando de todas as etapas do ciclo de desenvolvimento de software, desde a implementação de funcionalidades até a manutenção e evolução de sistemas.",
                 "Principais responsabilidades:",
                 "• Desenvolvimento de soluções fullstack para projetos internos e grandes clientes.",
-                "• Participação em projetos estratégicos para a Ágora Investimentos (Grupo Bradesco).",
+                "• Participação em projetos estratégicos para clientes do setor financeiro.",
                 "• Transformação de protótipos e requisitos de negócio em interfaces modernas e intuitivas.",
                 "• Desenvolvimento e integração de funcionalidades backend.",
                 "• Utilização do Azure DevOps e Jira para gestão de demandas, versionamento e pipelines de CI/CD.",
