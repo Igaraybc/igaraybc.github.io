@@ -74,6 +74,40 @@
         "subtitle": "In addition to my experience in corporate environments and enterprise projects, I design and develop custom websites for businesses and professionals across a wide range of industries.Leveraging WordPress, HTML, CSS, and JavaScript, I build modern, responsive, and user-focused websites that align with each client's goals. My approach combines clean design, performance, and usability to deliver impactful digital experiences.",
         "scrollText": "SCROLL  DOWN"
     },
+    "projects": {
+        "slides": [
+            {
+                "image": "assets/img/luceliabarbosa.png",
+                "title": "Lucélia Barbosa",
+                "description": "An e-commerce website created for selling digital products, offering a simple, secure, and intuitive shopping experience."
+            },
+            {
+                "image": "assets/img/masterbuild-screenshot.png",
+                "title": "Masterbuild",
+                "description": "A website created for a fictional company, designed to deliver a modern and professional digital experience aligned with industry best practices."
+            },
+            {
+                "image": "assets/img/raymondosero-screenshot.png",
+                "title": "RCMB",
+                "description": "An institutional website developed to showcase digital marketing consulting services and strengthen the brand's online presence."
+            },
+            {
+                "image": "assets/img/ocosmodesign-screenshot.png",
+                "title": "O Cosmo Design",
+                "description": "A website created to present the agency's portfolio, services, and visual identity in a clear and engaging way."
+            },
+            {
+                "image": "assets/img/auriceliamassoterapia-screenshot.png",
+                "title": "Auricélia B. Massoterapia",
+                "description": "A website developed to promote massage therapy services, courses, and wellness-related content, creating a closer connection with clients."
+            },
+            {
+                "image": "assets/img/audisomca-screenshot.png",
+                "title": "Audisom CA",
+                "description": "A landing page designed to support marketing campaigns and increase the generation of qualified leads for the business."
+            }
+        ]
+    },
     "contact":{
         "title": "Contacts"
     },
