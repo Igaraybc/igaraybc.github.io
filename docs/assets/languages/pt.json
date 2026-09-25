@@ -1,12 +1,12 @@
 {
     "header": {
         "aboutMe": "Sobre mim",
-        "skills": "Habilidades",
-        "experiences": "Experiências",
-        "portfolio": "Portfólio",
+        "skills": "Tecnologias e Ferramentas",
+        "experiences": "Experiência Profissional",
+        "portfolio": "Projetos em destaque",
         "contact": "Contato"
     },
-    "home":{
+    "home": {
         "welcome": "Olá",
         "name": "Sou Ígara Yasmin",
         "profession1": "Desenvolvedora",
@@ -14,62 +14,103 @@
     },
     "aboutMe": {
         "title": "Sobre mim",
-        "text": "Olá! Sou Ígara Yasmin, Engenheira de Computação e ao longo dos últimos anos tenho dedicado meus estudos e a minha carreira na área de desenvolvimento de software, fortalecendo meus conhecimentos em diversas linguagens de programação, frameworks e metodologias ágeis. Trabalhei em projetos diversificados, colaborando com times multidisciplinares, especialmente no frontend utilizando Angular, React.js e WordPress. Nos últimos tempos, venho atuando como desenvolvedora fullstack com C#, utilizando tecnologias como ASP.NET e Blazor, contribuindo tanto no backend quanto no frontend de aplicações web. Estou animada para enfrentar novos desafios, explorar oportunidades emocionantes e continuar crescendo como profissional. Se você está interessado em colaborar ou saber mais sobre mim, sinta-se à vontade para entrar em contato!",
+        "text": "Sou Engenheira de Computação e Desenvolvedora Fullstack com experiência na construção de aplicações web, sistemas corporativos e websites profissionais. Ao longo da minha trajetória, participei de projetos para empresas de diferentes segmentos, atuando tanto no frontend quanto no backend e colaborando com equipes multidisciplinares em ambientes ágeis. Minha experiência inclui tecnologias como C#, ASP.NET, Blazor, Angular, React, JavaScript, Node.js e WordPress, permitindo desenvolver soluções completas, desde a concepção da interface até a implementação das regras de negócio.Atualmente atuo na Capgemini, contribuindo para projetos de grande porte e alto impacto para clientes do setor financeiro. Tenho paixão por transformar desafios em soluções digitais eficientes, sempre buscando evolução contínua, boas práticas de desenvolvimento e uma excelente experiência para o usuário.",
         "buttonCV": "Baixar currículo",
         "buttonContact": "Contato"
     },
-    "skills":{
-        "title": "Habilidades",
-        "subtitle": "Ferramentas de programação que tenho experiência"
+    "skills": {
+        "title": "Tecnologias e Ferramentas",
+        "subtitle": "Tecnologias que utilizo para desenvolver aplicações modernas, escaláveis e orientadas à melhor experiência do usuário."
     },
-    "experiences":{
-        "title": "Experiências",
-        "card1":{
-            "title": "Desenvolvedora Fullstack",
-            "company": "Campgemini Brasil",
-            "item1": "Atuação como desenvolvedora fullstack com C#, ASP.NET e Blazor em projetos internos e para grandes clientes.",
-            "item2":"Destaque para projetos desafiadores desenvolvidos para o cliente Ágora Investimentos (Bradesco).",
-            "item3":"Contribuição no frontend, transformando protótipos em interfaces intuitivas e funcionais.",
-            "item4": "Participação ativa no backend, implementando e integrando novas funcionalidades ao código-fonte.",
-            "item5": "Utilização do Azure DevOps para gerenciamento de tarefas, versionamento de código e automação de pipelines."
-        },
-        "card2":{
-            "title": "Desenvolvedora de Software",
-            "company": "Impulse Business Solutions",
-            "item1": "Desenvolvimento web Front-end de websites e sistemas CRUD utilizando HTML, CSS, React.js, JavaScript, Wordpress;",
-            "item2":"Desenvolvimento na parte de Back-end utilizando Node.js com banco de dados mongoDB e MySQL;",
-            "item3":"Desenvolvimento de fluxos conversacionais através do zenvia flow;",
-            "item4":"Desenvolvimento do documento de requisitos de um projeto relacionado a educação municipal;",
-            "item5":"Utilização da metodologia ágil Scrum."
-        },
-        "card3":{
-            "title": "Desenvolvedora Front-end",
-            "company": "STTP - Superintendência de Trânsito e Transportes Públicos",
-            "item1": "Desenvolvimento web Front-end de sistemas CRUD e websites com HTML, CSS, Angular, TypeScript, Bootstrap;",
-            "item2":"Desenvolvimento web Back-end utilizando Node.js com banco de dados mongoDB;",
-            "item3":"Edição de códigos PHP;",
-            "item4":"Git para o versionamento do projeto."
-        },
-        "card4":{
-            "title": "Desenvolvedora de Websites",
-            "company": "Desenvolvimento de sites para empresas:",
-            "item1": "ocosmodesign.com",
-            "item2":"auriceliamassoterapia.com",
-            "item3":"audisomca.com.br/lp",
-            "item4": "raymondosero.com"
-        }
+    "experiences": {
+        "title": "Experiência Profissional",
+        "cards": [
+            {
+                "title": "Desenvolvedora Full Stack",
+                "company": "Capgemini Brasil",
+                "items": [
+                    "Atuação no desenvolvimento de aplicações corporativas utilizando C#, ASP.NET e Blazor, participando de todas as etapas do ciclo de desenvolvimento de software, desde a implementação de funcionalidades até a manutenção e evolução de sistemas.",
+                    "Principais responsabilidades:",
+                    "• Desenvolvimento de soluções fullstack para projetos internos e grandes clientes.",
+                    "• Participação em projetos estratégicos para clientes do setor financeiro.",
+                    "• Transformação de protótipos e requisitos de negócio em interfaces modernas e intuitivas.",
+                    "• Desenvolvimento e integração de funcionalidades backend.",
+                    "• Utilização do Azure DevOps e Jira para gestão de demandas, versionamento e pipelines de CI/CD.",
+                    "• Colaboração com equipes multidisciplinares em ambientes ágeis."
+                ]
+            },
+            {
+                "title": "Desenvolvedora de Software",
+                "company": "Impulse Business Solutions",
+                "items": [
+                    "Atuação no desenvolvimento de sistemas web, websites corporativos e soluções digitais personalizadas, participando tanto do desenvolvimento quanto do levantamento de requisitos.",
+                    "Principais responsabilidades:",
+                    "• Desenvolvimento frontend com React.js, JavaScript, HTML e CSS.",
+                    "• Construção e manutenção de websites em WordPress.",
+                    "• Desenvolvimento backend com Node.js, MongoDB e MySQL.",
+                    "• Criação de fluxos conversacionais utilizando Zenvia Flow.",
+                    "• Elaboração de documentação e levantamento de requisitos para projetos educacionais.",
+                    "• Aplicação da metodologia Scrum no gerenciamento das entregas."
+                ]
+            },
+            {
+                "title": "Desenvolvedora Front-end",
+                "company": "STTP - Superintendência de Trânsito e Transportes Públicos",
+                "items": [
+                    "Participação no desenvolvimento de sistemas internos e aplicações web voltadas para operações administrativas",
+                    "Principais responsabilidades:",
+                    "• Desenvolvimento frontend com Angular, TypeScript, HTML, CSS e Bootstrap.",
+                    "• Desenvolvimento backend com Node.js e MongoDB.",
+                    "• Manutenção e ajustes em aplicações PHP.",
+                    "• Controle de versão utilizando Git.",
+                    "• Desenvolvimento de sistemas CRUD e portais institucionais."
+                ]
+            }
+        ]
     },
-    "portfolio":{
-        "title": "Portfólio",
-        "subtitle": "Aplicações e websites que construí ao longo da minha trajetória",
+    "portfolio": {
+        "title": "Projetos em destaque",
+        "subtitle": "Além da minha experiência em empresas e projetos corporativos, também atuo no desenvolvimento de websites personalizados para empresas e profissionais de diferentes segmentos.Utilizando principalmente WordPress, HTML, CSS e JavaScript, desenvolvo soluções modernas, responsivas e alinhadas aos objetivos de cada cliente, sempre buscando unir design, performance e uma excelente experiência do usuário.",
         "scrollText": "ROLE PARA BAIXO"
     },
-    "contact":{
+    "projects": {
+        "slides": [
+            {
+                "image": "assets/img/luceliabarbosa.png",
+                "title": "Lucélia Barbosa",
+                "description": "Loja virtual desenvolvida para a comercialização de produtos digitais, oferecendo uma experiência de compra simples, segura e intuitiva."
+            },
+            {
+                "image": "assets/img/masterbuild-screenshot.png",
+                "title": "Masterbuild",
+                "description": "Projeto desenvolvido para uma empresa fictícia com foco na criação de uma experiência moderna, profissional e alinhada às boas práticas do mercado."
+            },
+            {
+                "image": "assets/img/raymondosero-screenshot.png",
+                "title": "RCMB",
+                "description": "Website institucional desenvolvido para destacar serviços de consultoria e fortalecer a presença online da marca."
+            },
+            {
+                "image": "assets/img/ocosmodesign-screenshot.png",
+                "title": "O Cosmo Design",
+                "description": "Site criado para apresentar os serviços e a identidade visual de um escritório de design de forma clara e atrativa."
+            },
+            {
+                "image": "assets/img/auriceliamassoterapia-screenshot.png",
+                "title": "Auricélia B. Massoterapia",
+                "description": "Website desenvolvido para divulgar serviços, cursos e conteúdos voltados ao bem-estar, proporcionando um canal de comunicação mais próximo com os clientes."
+            },
+            {
+                "image": "assets/img/audisomca-screenshot.png",
+                "title": "Audisom CA",
+                "description": "Landing page criada para apoiar campanhas de marketing e ampliar a geração de contatos qualificados para o negócio."
+            }
+        ]
+    },
+    "contact": {
         "title": "Contatos"
     },
-    "footer":{
+    "footer": {
         "copyright": "© 2026 Ígara Cajazeiras - Todos os direitos reservados."
     }
-
 }
-  
